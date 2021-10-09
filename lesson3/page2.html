@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+    <div id="div1">
+        שלום וברכה
+    </div>
+    <script>
+        let userStr=localStorage.getItem("currentUser");
+        let u=JSON.parse(userStr);
+        alert(u.name)
+        
+        function getFromStorege() {
+
+
+            document.getElementById("div1").style.backgroundColor = sessionStorage.getItem("myColor")
+            document.getElementById("div1").style.backgroundColor = sessionStorage.myColor;
+        }
+
+        getFromStorege();
+      
+    </script>
+</body>
+
+</html>
